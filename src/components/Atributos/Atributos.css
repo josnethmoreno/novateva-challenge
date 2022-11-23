@@ -1,0 +1,32 @@
+.Atributos-table{
+  color: var(--muted);
+  width: 100%;
+}
+
+.Atributos-table th,
+.Atributos-table td{
+  padding: 1rem;
+}
+
+.Atributos-table th{
+  text-align: left;
+}
+
+.Atributos-table-options{
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem;
+  border: 1px solid var(--muted);
+  border-radius: 10px;
+}
+
+.Atributos-table-options.dos{
+  display: flex;
+  justify-content: end;
+}
+
+.Atributos-table-btn-container{
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+}

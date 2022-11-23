@@ -1,0 +1,29 @@
+.Form {
+  padding: 2rem;
+}
+
+.Form > .container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 4rem;
+}
+
+.Form-label{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--muted)
+}
+
+.Form-label span{
+  display: block;
+}
+
+.Form-label.textarea{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.Form-textarea{
+  width: 100%;
+}

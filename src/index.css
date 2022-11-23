@@ -1,0 +1,111 @@
+:root{
+  --primary: #3DA2EA;
+  --white: #ffffff;
+  --muted: #757575;
+  --muted-2: #DFDFDF;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+  font-family: sans-serif;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+#root,
+#__next {
+	isolation: isolate;
+}
+
+.container{
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
+input{
+  padding: .8rem;
+  border: 1px solid var(--muted-2);
+  border-radius: 10px
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 80px;
+  padding: .1rem .5rem .1rem .5rem;
+  font-size: 10px;
+  border: 1px solid var(--primary);
+  color: var(--primary)
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--primary);
+  color: var(--white)
+}
+
+input[type="checkbox"]::before {
+  content: attr(data-content)
+}
+
+select{
+  color: var(--muted);
+  padding: .4rem;
+  min-width: 120px;
+  border: 1px solid var(--muted-2);
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+textarea{
+  padding: .8rem;
+  border: 1px solid var(--muted-2);
+  border-radius: 10px;
+}
+
+.Button{
+  padding: .4rem 4rem;
+  color: var(--white);
+  background-color: var(--primary);
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.Button.outline{
+  color: var(--primary);
+  background-color: transparent;
+  border: 1px solid var(--primary)
+}
